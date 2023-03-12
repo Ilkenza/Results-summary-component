@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.al{
+    display: flex;
+    flex-direction: column;
+}
+.two-card{
+    display: flex;
+    box-shadow: 0px 0px 20px #00000059;
+    border-radius: 2rem;
+}
+.first-card{
+    width: 21rem;
+    background:linear-gradient(rgb(120, 87, 255),rgb(46, 43, 233));
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first-card h3{
+    color: rgb(200, 199, 255);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.result{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background: linear-gradient(rgb(78, 33, 202),rgba(36, 33, 202, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.result h1{
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0rem;
+}
+.result p{
+    color: rgb(136, 117, 255);
+    text-align: center;
+    margin: 0rem;
+    font-weight: 800;
+}
+.first-card h2{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 0rem;
+}
+.first-card .txt{
+    color: rgb(200, 199, 255);
+    font-size: 1.2rem;
+    text-align: center;
+    width: 17rem;
+}
+.second{
+    background-color: #fff;
+    width: 21rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: 2rem;
+}
+.second h3{
+    color: rgb(48, 59, 90);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.c{
+    display: flex;
+    border-radius: 0.7rem;
+    padding: 0rem 1rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.reaction{background-color: rgba(255,87,87,10%);}
+.memory{background-color: rgba(255,177,31,10%);}
+.verbal{background-color: rgba(0,189,145,10%);}
+.visual{background-color: rgba(17,37,212,10%);}
+.r-img,.m-img,.ve-img,.vi-img{display: flex;}
+.r-img p,.m-img p,.ve-img p,.vi-img p{padding-left:.5rem;}
+.r-img p{color:rgb(255,87,87);}
+.m-img p{color:rgb(255,177,31);}
+.ve-img p{color:rgb(0,189,145);}
+.vi-img p{color:rgb(17,37,212);}
+.c-txt span{color: #938F9F;}
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 59, 90);
+    border-radius: 2rem;
+    padding: 1rem 0rem;
+    margin-top: 3rem;
+}
+.button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 1rem;
+    font-size:small;
+}
+.attribution a { color: hsl(228, 100%, 50%); }
+@media all and (max-width:800px){
+    .two-card{
+        flex-direction: column;
+    }
+    .second h3{
+        margin-top: 0rem;
+    }
+    .first-card{
+        border-top-left-radius: 0rem;
+        border-top-right-radius: 0rem;
+    }
+}
+@media all and (max-width:450px){
+    .first-card,.second{
+        padding: 1rem;
+    }
+}
